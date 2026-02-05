@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Penpal App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Virtual Penpal App</h1>
+    <button id="open-signup">Signup</button>
+    <button id="open-signin">Signin</button>
+</header>
+
+<!-- ✅ Main Content -->
+<div id="main" class="hidden">
+    <h2>Welcome, <span id="user-name"></span>!</h2>
+
+    <h3>Your Post</h3>
+    <textarea id="post-text" placeholder="Write something..."></textarea>
+    <button id="post-btn">Post</button>
+
+    <h3>Feed</h3>
+    <div id="feed"></div>
+
+    <h3>Registered Users</h3>
+    <div id="xml-users"></div>
+</div>
+
+<!-- ✅ SIGNUP MODAL -->
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <h2>Create Account</h2>
+
+        <label>Username</label>
+        <input type="text" id="signup-username">
+
+        <label>Password</label>
+        <input type="password" id="signup-password">
+
+        <div class="modal-buttons">
+            <button id="signup-btn">Signup</button>
+            <button id="signup-cancel">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<!-- ✅ SIGNIN MODAL -->
+<div id="signinModal" class="modal">
+    <div class="modal-content">
+        <h2>Login</h2>
+
+        <label>Username</label>
+        <input type="text" id="signin-username">
+
+        <label>Password</label>
+        <input type="password" id="signin-password">
+
+        <div class="modal-buttons">
+            <button id="signin-btn">Signin</button>
+            <button id="signin-cancel">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
